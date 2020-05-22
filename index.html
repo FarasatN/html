@@ -1,0 +1,111 @@
+<!DOCTYPE html><head>
+<meta http-equiv="refresh" content="360">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<html lang="en-US">
+<h1 style="font-size: 80; color: darkgreen; text-align:center">Bu bir başlıqdır</h1>
+<h1 style="color:yellow; font-size: 100">This is a heading</h1>
+<button type="button" onclick="alert('salam hər kəsə!')">click me &#128516</button>
+<form>
+  <label for="myfile">Select a file:</label>
+  <input type="file" id="myfile" name="myfile">
+</form>
+<h1 style="background-color:rgb(0,0,0,0); color:grey">Tomato</h1>
+<body style="background:lightgreen; ">
+<meta charset="UTF-8">
+<p><a href="www.farasat.pythonanywhere.com">www.farasat.pythonanywhere.com</a>
+  <iframe src="https://www.w3schools.com" height="200" width="300"></iframe>
+<iframe src="demo_iframe.htm" style="border:2px solid red;"></iframe>
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+<p id="dem">JavaScript can change the style of an HTML element.</p>
+
+<script>
+function myFunction() {
+  document.getElementById("dem").style.fontSize = "25px"; 
+  document.getElementById("dem").style.color = "red";
+  document.getElementById("dem").style.backgroundColor = "yellow";        
+}
+</script>
+<button type="button" onclick="myFunction()">Click Me!</button><br>
+
+
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "pic_bulboff.gif"
+  } else {
+    pic = "pic_bulbon.gif"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+
+<p>
+<button type="button" onclick="light(1)">Light On</button>
+<button type="button" onclick="light(0)">Light Off</button>
+</p>
+<video width="320" height="200" autoplay>
+  <source src="/home/farasat/Masaüstü/WebHD_720p.mp4" type="video/mp4">
+  Your browser does not support HTML video.
+</video>
+
+<form action="/action_page.php" target="_blank">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value=""><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="420">
+    <source src="/home/farasat/Masaüstü/WebHD_720p.mp4" type="video/mp4">
+    <source src="/home/farasat/Masaüstü/WebHD_720p.mp4" type="video/ogg">
+    Your browser does not support HTML video.
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script> 
+
+<br><br>
+<iframe width="420" height="315"
+src="https://www.youtube.com/watch?v=OFXHrRcYuDQ">
+</iframe>
+
+
+
+</body>
+</html>
